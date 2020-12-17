@@ -1,5 +1,5 @@
 {
-  "name": "League Pass Spoiler Blocker",
+  "name": "NBA League Pass Spoiler Blocker",
   "version": "1.0.0",
   "description": "A web browser extension to remove spoilers when watching NBA games via League Pass",
   "manifest_version": 2,
@@ -14,7 +14,6 @@
     }
   ],
   "permissions": [
-    "activeTab",
     "https://www.nba.com/"
   ],
   "icons": {
