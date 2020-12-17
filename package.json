@@ -1,0 +1,24 @@
+{
+  "name": "league-pass-spoiler-blocker",
+  "version": "1.0.0",
+  "description": "A web browser extension to remove spoilers when watching NBA games via League Pass",
+  "main": "src/index.js",
+  "repository": "https://github.com/RobTheFiveNine/league-pass-spoiler-blocker",
+  "author": "RobTheFiveNine",
+  "license": "GPL-3.0-or-later",
+  "private": true,
+  "scripts": {
+    "chrome": "yarn build:dev && google-chrome --user-data-dir='.profile' --load-extension='build'",
+    "build": "rm -rf build && webpack --config webpack.config.js",
+    "build:dev": "rm -rf build && webpack --config webpack.config.js --mode development --devtool inline-source-map",
+    "build:zip": "yarn build && mkdir -p zips && (cd build && zip -r ../zips/league-pass-spoiler-blocker_$(grep '\"version\"' manifest.json | grep -oP \"\\d.\\d.\\d\" | tr -d '\\n').zip *)"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^7.0.0",
+    "webpack": "^5.11.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
