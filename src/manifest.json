@@ -13,9 +13,6 @@
       "run_at": "document_idle"
     }
   ],
-  "permissions": [
-    "https://www.nba.com/"
-  ],
   "icons": {
     "16": "images/icon.png",
     "32": "images/icon.png",
