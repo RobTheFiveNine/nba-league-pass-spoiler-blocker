@@ -1,5 +1,5 @@
 function main() {
-  const gameHero = document.querySelector('[class*=GameHero_container]');
+  const gameHero = document.querySelector('[class*=GameHeroBackground]');
   let hideScores = document.getElementsByName('showScores')[0];
 
   if (gameHero) {
