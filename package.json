@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "A web browser extension to remove spoilers when watching NBA games via League Pass",
   "main": "src/index.js",
-  "repository": "https://github.com/RobTheFiveNine/league-pass-spoiler-blocker",
+  "repository": "https://github.com/RobTheFiveNine/nba-league-pass-spoiler-blocker",
   "author": "RobTheFiveNine",
   "license": "GPL-3.0-or-later",
   "private": true,
