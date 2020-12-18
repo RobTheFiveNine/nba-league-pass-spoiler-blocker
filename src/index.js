@@ -1,10 +1,5 @@
-function main() {
-  const gameHero = document.querySelector('[class*=GameHeroBackground]');
+function findHideScoresInput() {
   let hideScores = document.getElementsByName('showScores')[0];
-
-  if (gameHero) {
-    gameHero.style.display = 'none';
-  }
 
   if (!hideScores) {
     hideScores = document.querySelector(
@@ -12,9 +7,37 @@ function main() {
     );
   }
 
-  if (hideScores && !hideScores.checked) {
-    hideScores.click();
+  return hideScores;
+}
+
+function main() {
+  const gameHero = document.querySelector('[class*=GameHeroBackground]');
+
+  if (gameHero) {
+    gameHero.style.display = 'none';
   }
+
+  let hideScores = findHideScoresInput();
+
+  const hideScoreSetup = setInterval(() => {
+    if (!hideScores) {
+      hideScores = findHideScoresInput();
+    }
+
+    if (hideScores) {
+      clearInterval(hideScoreSetup);
+    }
+
+    hideScores.addEventListener('change', (e) => {
+      if (!e.target.checked) {
+        setTimeout(() => hideScores.click(), 1);
+      }
+    });
+
+    if (hideScores && !hideScores.checked) {
+      hideScores.click();
+    }
+  }, 20);
 }
 
 module.exports = { main };
