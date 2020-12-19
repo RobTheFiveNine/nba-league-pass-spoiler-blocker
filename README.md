@@ -10,7 +10,7 @@ Install
 -------
 To install the extension, visit one of the following URLs:
 
-- Google Chrome (Pending Review)
+- Google Chrome: [https://chrome.google.com/webstore/detail/nba-league-pass-spoiler-b/ehcjfedicaeibagngindaebgdaaagpea/](https://chrome.google.com/webstore/detail/nba-league-pass-spoiler-b/ehcjfedicaeibagngindaebgdaaagpea/)
 - Mozilla FireFox (Pending Review)
 
 Supported Browsers
