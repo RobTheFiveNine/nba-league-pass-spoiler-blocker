@@ -11,7 +11,7 @@ Install
 To install the extension, visit one of the following URLs:
 
 - Google Chrome: [https://chrome.google.com/webstore/detail/nba-league-pass-spoiler-b/ehcjfedicaeibagngindaebgdaaagpea/](https://chrome.google.com/webstore/detail/nba-league-pass-spoiler-b/ehcjfedicaeibagngindaebgdaaagpea/)
-- Mozilla FireFox (Pending Review)
+- Mozilla FireFox: [https://addons.mozilla.org/en-GB/firefox/addon/nba-league-pass-spoiler-block/](https://addons.mozilla.org/en-GB/firefox/addon/nba-league-pass-spoiler-block/)
 
 Supported Browsers
 ------------------
